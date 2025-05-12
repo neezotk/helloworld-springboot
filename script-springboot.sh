@@ -41,7 +41,7 @@ echo "$CURRENT_STEP ..."
 curl http://localhost:$PORT | grep -q "Hello World"
 
 #push image dockerhub
-#dckr_pat_It7YB8RsAjJs8oFk8wSP4pHRCkg
+
 CURRENT_STEP="push image dockerhub"
 echo "$CURRENT_STEP ..."
 docker push "$DOCKER_IMAGE:$TAG"
